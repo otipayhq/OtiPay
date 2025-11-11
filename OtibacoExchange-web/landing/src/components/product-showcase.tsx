@@ -17,7 +17,7 @@ export default function ProductShowcase() {
         "No limits or hidden fees",
         "Bank transfer or wallet withdrawal",
       ],
-      image: "/Otipay_buy.png",
+      image: "/Otipay_Buy.png",
       color: "from-green-500 to-emerald-500",
     },
     {
