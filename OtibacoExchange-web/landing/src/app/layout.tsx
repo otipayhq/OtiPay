@@ -11,6 +11,7 @@ import {
   Source_Serif_4 as V0_Font_Source_Serif_4,
 } from "next/font/google"
 
+// updated font
 const _geistSans = Geist({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
