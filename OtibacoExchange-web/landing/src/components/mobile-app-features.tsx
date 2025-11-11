@@ -57,7 +57,7 @@ export function MobileAppFeatures() {
   }
 
   return (
-    <section className="py-20 md:py-32 bg-background space-y-20">
+    <section className="py-20 md:py-5 bg-background space-y-20">
       <motion.div
         initial="hidden"
         whileInView="show"
