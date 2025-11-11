@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function HeroSection() {
   return (
@@ -52,13 +53,18 @@ export default function HeroSection() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-col sm:flex-row gap-4 justify-center"
           >
+            <Link href="/products/mobile-app">
             <Button size="lg" className="gap-2">
-              Start Trading
+              Get the App
               <ArrowRight className="w-4 h-4" />
             </Button>
-            <Button size="lg" variant="outline">
-              Learn More
-            </Button>
+            </Link>
+
+            <Link href="/legal/terms">
+              <Button size="lg" variant="outline">
+                Learn More
+              </Button>
+            </Link>
           </motion.div>
 
           {/* Stats with enhanced styling */}

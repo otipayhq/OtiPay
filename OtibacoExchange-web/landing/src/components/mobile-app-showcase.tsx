@@ -111,96 +111,85 @@ export default function MobileAppShowcase() {
           </div>
 
           {/* Right: Mobile Phone Mockup with Animation */}
-          <motion.div variants={itemVariants} className="relative h-[600px] md:h-[700px]">
+          <motion.div
+            variants={itemVariants}
+            className="relative h-[600px] md:h-[700px] flex justify-center items-center"
+          >
             {/* Phone Frame */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <motion.div
-                initial={{ y: 0 }}
-                animate={{ y: [0, -10, 0] }}
-                transition={{ duration: 4, repeat: Number.POSITIVE_INFINITY }}
-                className="relative w-80 h-96 rounded-3xl bg-black shadow-2xl overflow-hidden border-[8px] border-gray-900"
-              >
-                {/* Notch */}
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-7 bg-black rounded-b-3xl z-50" />
+            <div className="relative w-80 md:w-96 h-[400px] md:h-[600px] rounded-3xl bg-black shadow-2xl overflow-hidden border-8 border-gray-900 flex flex-col">
 
-                {/* Phone Screen Content */}
-                <div className="w-full h-full bg-gradient-to-br from-primary/10 via-background to-accent/10 overflow-hidden relative">
-                  {/* Screen content animations */}
-                  <motion.div
-                    initial={{ opacity: 0 }}
-                    animate={{ opacity: 1 }}
-                    transition={{ duration: 0.5, delay: 0.2 }}
-                    className="p-6 h-full flex flex-col justify-between"
+              {/* Notch */}
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-48 h-7 bg-black rounded-b-3xl z-50" />
+
+              {/* Phone Screen */}
+              <div className="flex-1 bg-gradient-to-br from-primary/10 via-background to-accent/10 p-4 overflow-hidden flex flex-col justify-between relative">
+                {/* Top - Balance */}
+                <motion.div
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.3 }}
+                  className="space-y-2"
+                >
+                  <p className="text-xs text-muted-foreground">Wallet Balance</p>
+                  <motion.p
+                    animate={{ scale: [1, 1.05, 1] }}
+                    transition={{ duration: 2, repeat: Infinity }}
+                    className="text-2xl md:text-3xl font-bold text-primary"
                   >
-                    {/* Top Section - Balance */}
-                    <motion.div
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.3 }}
-                      className="space-y-2"
-                    >
-                      <p className="text-xs text-muted-foreground">Wallet Balance</p>
-                      <motion.p
-                        animate={{ scale: [1, 1.05, 1] }}
-                        transition={{ duration: 2, repeat: Number.POSITIVE_INFINITY }}
-                        className="text-2xl font-bold text-primary"
+                    ₦2,450,000
+                  </motion.p>
+                </motion.div>
+
+                {/* Middle - Quick Convert */}
+                <motion.div
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  animate={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.5, delay: 0.5 }}
+                  className="bg-white/10 backdrop-blur-sm rounded-xl p-4 space-y-3 border border-white/20"
+                >
+                  <p className="text-xs text-muted-foreground">Quick Convert</p>
+                  <div className="space-y-2">
+                    <div className="flex justify-between items-center">
+                      <span className="text-sm font-medium">USDT</span>
+                      <motion.span
+                        animate={{ x: [0, 4, 0] }}
+                        transition={{ duration: 1.5, repeat: Infinity }}
+                        className="text-xs text-accent"
                       >
-                        ₦2,450,000
-                      </motion.p>
-                    </motion.div>
+                        1,000
+                      </motion.span>
+                    </div>
+                    <div className="h-1 bg-white/10 rounded-full overflow-hidden">
+                      <motion.div
+                        initial={{ width: 0 }}
+                        animate={{ width: "80%" }}
+                        transition={{ duration: 1, delay: 0.6 }}
+                        className="h-full bg-accent rounded-full"
+                      />
+                    </div>
+                  </div>
+                </motion.div>
 
-                    {/* Middle Section - Transaction */}
-                    <motion.div
-                      initial={{ opacity: 0, scale: 0.9 }}
-                      animate={{ opacity: 1, scale: 1 }}
-                      transition={{ duration: 0.5, delay: 0.5 }}
-                      className="bg-white/10 backdrop-blur-sm rounded-xl p-4 space-y-3 border border-white/20"
-                    >
-                      <p className="text-xs text-muted-foreground">Quick Convert</p>
-                      <div className="space-y-2">
-                        <div className="flex justify-between items-center">
-                          <span className="text-sm font-medium">USDT</span>
-                          <motion.span
-                            animate={{ x: [0, 4, 0] }}
-                            transition={{ duration: 1.5, repeat: Number.POSITIVE_INFINITY }}
-                            className="text-xs text-accent"
-                          >
-                            1,000
-                          </motion.span>
-                        </div>
-                        <div className="h-1 bg-white/10 rounded-full overflow-hidden">
-                          <motion.div
-                            initial={{ width: 0 }}
-                            animate={{ width: "80%" }}
-                            transition={{ duration: 1, delay: 0.6 }}
-                            className="h-full bg-accent rounded-full"
-                          />
-                        </div>
-                      </div>
-                    </motion.div>
-
-                    {/* Bottom Section - Button */}
-                    <motion.button
-                      initial={{ opacity: 0, y: 20 }}
-                      animate={{ opacity: 1, y: 0 }}
-                      transition={{ duration: 0.5, delay: 0.7 }}
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                      className="w-full py-3 bg-accent text-accent-foreground rounded-lg font-semibold text-sm"
-                    >
-                      Convert Now
-                    </motion.button>
-                  </motion.div>
-                </div>
-              </motion.div>
+                {/* Bottom - Button */}
+                <motion.button
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: 0.7 }}
+                  whileHover={{ scale: 1.02 }}
+                  whileTap={{ scale: 0.98 }}
+                  className="w-full py-3 bg-accent text-accent-foreground rounded-lg font-semibold text-sm md:text-base mt-2"
+                >
+                  Convert Now
+                </motion.button>
+              </div>
             </div>
 
-            {/* Floating Feature Cards */}
+            {/* Floating Cards */}
             <motion.div
               initial={{ opacity: 0, x: -40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 0.8 }}
-              className="absolute -left-8 bottom-24 bg-card border border-border rounded-xl p-4 shadow-lg w-56 z-10"
+              className="absolute -left-2 md:-left-8 bottom-16 md:bottom-24 bg-card border border-border rounded-xl p-4 shadow-lg w-52 md:w-56 z-10"
             >
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
@@ -215,7 +204,7 @@ export default function MobileAppShowcase() {
               initial={{ opacity: 0, x: 40 }}
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: 1.0 }}
-              className="absolute -right-8 top-32 bg-card border border-border rounded-xl p-4 shadow-lg w-56 z-10"
+              className="absolute -right-2 md:-right-8 top-24 md:top-32 bg-card border border-border rounded-xl p-4 shadow-lg w-52 md:w-56 z-10"
             >
               <div className="space-y-2">
                 <div className="flex items-center gap-2">
@@ -226,6 +215,7 @@ export default function MobileAppShowcase() {
               </div>
             </motion.div>
           </motion.div>
+
         </motion.div>
 
         {/* Happy Customers Section */}

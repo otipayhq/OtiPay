@@ -1,27 +1,25 @@
 "use client"
 
 import type React from "react"
-
 import Link from "next/link"
 import { useState } from "react"
 import { Menu, X, Moon, Sun } from "lucide-react"
 
 export function Header({ theme, onThemeToggle }: { theme: "light" | "dark"; onThemeToggle: () => void }) {
   const [isOpen, setIsOpen] = useState(false)
-
   const toggleMenu = () => setIsOpen(!isOpen)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 w-full">
-      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 mt-4">
-        <div className="rounded-2xl backdrop-blur-md bg-background/80 border border-border/40 shadow-lg">
+    <header className="fixed top-0 left-0 right-0 z-50">
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-3">
+        <div className="rounded-2xl backdrop-blur-md bg-background/80 border border-border/40 shadow-lg transition-all">
           <div className="flex items-center justify-between px-6 py-4">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary/70 text-primary-foreground font-bold text-sm">
                 OB
               </div>
-              <span className="hidden font-bold text-lg text-foreground sm:inline">OtiBacoExchange</span>
+              <span className="hidden sm:inline font-bold text-lg text-foreground">OtiBacoExchange</span>
             </Link>
 
             {/* Desktop Navigation */}
@@ -30,10 +28,10 @@ export function Header({ theme, onThemeToggle }: { theme: "light" | "dark"; onTh
 
               {/* Products Dropdown */}
               <div className="group relative">
-                <button className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors">
+                <button className="px-3 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors rounded-lg">
                   Products
                 </button>
-                <div className="absolute left-0 mt-0 w-48 bg-card border border-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
+                <div className="absolute left-0 mt-2 w-48 bg-card border border-border rounded-xl shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200">
                   <NavLink href="/products/wallet" className="block px-4 py-3 text-sm hover:bg-muted rounded-t-xl">
                     Wallet
                   </NavLink>
@@ -61,7 +59,7 @@ export function Header({ theme, onThemeToggle }: { theme: "light" | "dark"; onTh
               <NavLink href="/resources">Resources</NavLink>
             </div>
 
-            {/* CTA Button + Mobile Menu + Theme Toggle */}
+            {/* CTA + Theme + Mobile Menu */}
             <div className="flex items-center gap-3">
               <Link
                 href="/company/contact"
@@ -70,7 +68,7 @@ export function Header({ theme, onThemeToggle }: { theme: "light" | "dark"; onTh
                 Contact Us
               </Link>
 
-              {/* Theme Toggle Button */}
+              {/* Theme Toggle */}
               <button
                 onClick={onThemeToggle}
                 className="p-2 rounded-lg hover:bg-muted transition-colors"
@@ -79,7 +77,7 @@ export function Header({ theme, onThemeToggle }: { theme: "light" | "dark"; onTh
                 {theme === "dark" ? <Sun size={20} /> : <Moon size={20} />}
               </button>
 
-              {/* Mobile Menu Button */}
+              {/* Mobile Menu Toggle */}
               <button
                 onClick={toggleMenu}
                 className="md:hidden p-2 rounded-lg hover:bg-muted transition-colors"
@@ -92,9 +90,13 @@ export function Header({ theme, onThemeToggle }: { theme: "light" | "dark"; onTh
         </div>
       </nav>
 
-      {/* Mobile Navigation */}
-      {isOpen && (
-        <div className="md:hidden mt-4 mx-4 rounded-xl backdrop-blur-md bg-card border border-border/40 shadow-lg px-4 py-4 space-y-2 animate-in fade-in slide-in-from-top-2">
+      {/* Mobile Menu */}
+      <div
+        className={`md:hidden transition-all duration-300 overflow-hidden ${
+          isOpen ? "max-h-[1000px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="mx-4 rounded-xl backdrop-blur-md bg-card border border-border/40 shadow-lg px-4 py-4 space-y-2">
           <MobileNavLink href="/" onClick={() => setIsOpen(false)}>
             Home
           </MobileNavLink>
@@ -133,7 +135,7 @@ export function Header({ theme, onThemeToggle }: { theme: "light" | "dark"; onTh
             Contact Us
           </Link>
         </div>
-      )}
+      </div>
     </header>
   )
 }
