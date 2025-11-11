@@ -85,7 +85,7 @@ export default function HeroSection() {
               whileHover={{ y: -5 }}
               className="space-y-1 p-6 rounded-xl bg-card/50 backdrop-blur border border-border/50 hover:border-primary/50 transition-colors"
             >
-              <div className="text-2xl sm:text-3xl font-bold text-primary">$2B+</div>
+              <div className="text-2xl sm:text-3xl font-bold text-primary">₦2B+</div>
               <p className="text-sm text-muted-foreground">Traded Monthly</p>
             </motion.div>
             <motion.div

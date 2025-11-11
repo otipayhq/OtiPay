@@ -9,23 +9,28 @@ import Image from "next/image"
 export default function ProductShowcase() {
   const products = [
     {
-      name: "Wallet",
-      description: "Multi-currency digital wallet for crypto storage",
-      features: ["Bitcoin, Ethereum & more", "Real-time rates", "Zero trading fees"],
-      image: "/cryptocurrency-wallet-digital-storage.jpg",
-      color: "from-blue-500 to-cyan-500",
+      name: "Buy & Sell",
+      description:
+        "Seamless crypto-to-fiat transactions for Nigerian traders — fast, secure, and reliable.",
+      features: [
+        "Instant USDT ↔ NGN conversion",
+        "No limits or hidden fees",
+        "Bank transfer or wallet withdrawal",
+      ],
+      image: "/crypto-buy-sell-exchange.jpg",
+      color: "from-green-500 to-emerald-500",
     },
     {
       name: "Exchange",
-      description: "Instant crypto to Naira conversion",
+      description: "Instant crypto-to-crypto or crypto-to-naira conversion at best market rates.",
       features: ["Best rates guaranteed", "No hidden fees", "Instant transfers"],
       image: "/crypto-exchange-platform.png",
       color: "from-purple-500 to-pink-500",
     },
     {
       name: "Cards",
-      description: "Virtual cards for crypto spending",
-      features: ["Instant generation", "Full control", "Spend limits"],
+      description: "Virtual cards for spending your crypto globally with full control.",
+      features: ["Instant generation", "Full control", "Set spend limits"],
       image: "/virtual-payment-card-cryptocurrency.jpg",
       color: "from-orange-500 to-red-500",
     },
@@ -49,7 +54,7 @@ export default function ProductShowcase() {
             transition={{ duration: 0.5, delay: 0.1 }}
             className="text-muted-foreground text-lg"
           >
-            Complete crypto solutions for Nigerian traders
+            Complete crypto solutions for Nigerian users — fast, secure, and reliable.
           </motion.p>
         </div>
 
