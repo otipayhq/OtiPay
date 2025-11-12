@@ -1,15 +1,18 @@
+"use client"
+
+import { motion } from "framer-motion"
+import { Button } from "@/components/ui/button"
 import ProductPageHero from "@/components/product-page-hero"
 import ProductFeatures from "@/components/product-features"
 import ProductBenefits from "@/components/product-benefits"
 import CTASection from "@/components/cta-section"
 import ExchangeConverter from "@/components/exchange-converter"
 import HowItWorks from "@/components/how-it-works"
-import ModernVideoEmbed from "@/components/modern-video-embed"
 
-export const metadata = {
-  title: "Exchange | Our Platform",
-  description: "Seamless currency conversion with no hidden fees and instant transfers.",
-}
+// export const metadata = {
+//   title: "Exchange | Our Platform",
+//   description: "Seamless currency conversion with no hidden fees and instant transfers.",
+// }
 
 export default function ExchangePage() {
   const features = [
@@ -71,22 +74,40 @@ export default function ExchangePage() {
         </div>
       </section>
 
-      <section className="py-20 md:py-32 bg-background">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-8">
-            <div className="text-center space-y-4">
-              <h2 className="text-3xl md:text-4xl font-bold">See How It Works</h2>
-              <p className="text-lg text-muted-foreground">Watch a quick demonstration of our exchange platform</p>
-            </div>
-            <ModernVideoEmbed
-              videoId="dQw4w9WgXcQ"
-              title="OtiPay Platform Tour"
-              description="Learn how to exchange crypto to Naira in just 2 minutes"
-              thumbnail="/fintech-exchange-demo.jpg"
-            />
-          </div>
+      {/* Video Hero Section */}
+      <section className="relative overflow-hidden min-h-[100vh] md:min-h-[120vh] flex items-center justify-center rounded-3xl px-4 md:px-12">
+        <div className="relative w-full max-w-6xl mx-auto">
+          {/* Background Video */}
+          <video
+            src="/video/Exchange_video.mp4"
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover rounded-3xl"
+          />
+
+          {/* Overlay for readability */}
+          <div className="absolute inset-0 bg-black/40 rounded-3xl" />
+
+          {/* Text */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="relative z-10 text-center text-white px-6 py-32 md:py-48"
+          >
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
+              Fast. Transparent. Seamless. The smarter way to exchange currency.
+            </h2>
+            <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">
+              Convert crypto to Naira instantly with zero hidden fees. Your money, your control, anywhere, anytime.
+            </p>
+          </motion.div>
         </div>
       </section>
+
 
       <HowItWorks />
 
