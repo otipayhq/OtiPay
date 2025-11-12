@@ -3,6 +3,7 @@
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
 import { ArrowRight } from "lucide-react"
+import Link from "next/link"
 
 export default function CTASection() {
   return (
@@ -32,15 +33,22 @@ export default function CTASection() {
           className="flex flex-col sm:flex-row gap-4 justify-center"
         >
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button size="lg" className="gap-2 w-full sm:w-auto">
-              Start Trading Now
-              <ArrowRight className="w-4 h-4" />
-            </Button>
+            <Link href="/products/mobile-app">
+              <Button size="lg" className="gap-2 w-full sm:w-auto">
+                Start Trading Now
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
           </motion.div>
           <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
-            <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent">
+            {/* <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent">
               Schedule Demo
-            </Button>
+            </Button> */}
+            <Link href="/legal/terms">
+              <Button size="lg" variant="outline">
+                Learn More
+              </Button>
+            </Link>
           </motion.div>
         </motion.div>
 
