@@ -1,7 +1,7 @@
 import AboutClient from "./_components/AboutClient"
 
 export const metadata = {
-  title: "About Us | OtiBacoExchange",
+  title: "About Us | OtiPay",
   description: "Learn about our mission to bring crypto to Nigeria with secure, regulated services.",
 }
 

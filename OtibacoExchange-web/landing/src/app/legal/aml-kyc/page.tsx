@@ -9,7 +9,7 @@ export default function AMLKYCPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">1. Anti-Money Laundering (AML) Policy</h2>
               <p>
-                OtiBacoExchange is committed to maintaining the highest standards of integrity and transparency in all
+                OtiPay is committed to maintaining the highest standards of integrity and transparency in all
                 our operations. We strictly comply with all applicable anti-money laundering (AML) and counter-terrorist
                 financing (CTF) regulations.
               </p>
@@ -63,7 +63,7 @@ export default function AMLKYCPage() {
 
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">6. Prohibited Activities</h2>
-              <p>OtiBacoExchange prohibits the use of our platform for:</p>
+              <p>OtiPay prohibits the use of our platform for:</p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
                 <li>Money laundering or terrorist financing</li>
                 <li>Sanctions violations</li>
@@ -76,7 +76,7 @@ export default function AMLKYCPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">7. Account Freezing and Termination</h2>
               <p>
-                OtiBacoExchange reserves the right to freeze or terminate accounts that are found to be in violation of
+                OtiPay reserves the right to freeze or terminate accounts that are found to be in violation of
                 our AML/KYC policies or applicable regulations.
               </p>
             </section>

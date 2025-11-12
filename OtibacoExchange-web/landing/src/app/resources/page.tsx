@@ -10,7 +10,7 @@ export default function ResourcesPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-5xl font-bold text-foreground mb-6">Resources & Support</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Everything you need to get started, integrate, and succeed with OtiBacoExchange.
+            Everything you need to get started, integrate, and succeed with OtiPay.
           </p>
         </div>
       </section>
@@ -22,7 +22,7 @@ export default function ResourcesPage() {
             <ResourceCard
               icon={<BookOpen className="w-8 h-8" />}
               title="Blog"
-              description="Stay updated with the latest news, insights, and updates from OtiBacoExchange."
+              description="Stay updated with the latest news, insights, and updates from OtiPay."
               href="/resources/blog"
             />
             <ResourceCard
@@ -34,7 +34,7 @@ export default function ResourcesPage() {
             <ResourceCard
               icon={<FileText className="w-8 h-8" />}
               title="Documentation"
-              description="Detailed guides and tutorials for using all OtiBacoExchange features."
+              description="Detailed guides and tutorials for using all OtiPay features."
               href="/resources/docs"
             />
             <ResourceCard

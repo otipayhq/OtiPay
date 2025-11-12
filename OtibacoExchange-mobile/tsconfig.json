@@ -1,5 +1,5 @@
 {
-  "extends": "expo/tsconfig.base",
+  // Removed "extends": "expo/tsconfig.base" because it couldn't be resolved; install expo or update the path to a valid base tsconfig.
   "compilerOptions": {
     "strict": true,
     "paths": {

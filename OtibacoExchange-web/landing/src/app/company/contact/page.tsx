@@ -40,7 +40,7 @@ export default function ContactPage() {
             {[
               {
                 title: "Email",
-                value: "support@otibacoexchange.com",
+                value: "support@OtiPay.com",
                 icon: Mail,
               },
               {
@@ -98,7 +98,7 @@ export default function ContactPage() {
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="OtiBacoExchange Location in Lagos, Nigeria"
+                  title="OtiPay Location in Lagos, Nigeria"
                 />
               </div>
               <p className="text-sm text-muted-foreground">

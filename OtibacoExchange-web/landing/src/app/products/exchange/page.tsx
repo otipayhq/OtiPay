@@ -80,7 +80,7 @@ export default function ExchangePage() {
             </div>
             <ModernVideoEmbed
               videoId="dQw4w9WgXcQ"
-              title="OtiBacoExchange Platform Tour"
+              title="OtiPay Platform Tour"
               description="Learn how to exchange crypto to Naira in just 2 minutes"
               thumbnail="/fintech-exchange-demo.jpg"
             />

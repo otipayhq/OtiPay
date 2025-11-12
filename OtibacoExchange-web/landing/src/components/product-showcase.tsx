@@ -17,14 +17,14 @@ export default function ProductShowcase() {
         "No limits or hidden fees",
         "Bank transfer or wallet withdrawal",
       ],
-      image: "/Otipay_Buy.png",
+      image: "/OtiPay_Buy&Sell.png",
       color: "from-green-500 to-emerald-500",
     },
     {
       name: "Exchange",
       description: "Instant crypto-to-crypto or crypto-to-naira conversion at best market rates.",
       features: ["Best rates guaranteed", "No hidden fees", "Instant transfers"],
-      image: "/Otipay_Exchange.png",
+      image: "/OtiPay_Exchange.png",
       color: "from-purple-500 to-pink-500",
     },
     {

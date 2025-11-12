@@ -17,7 +17,7 @@ export function MobileAppFeatures() {
       image: "/mobile-app-user2.png",
       title: "Deposit and Withdraw",
       description:
-        "Move funds your way. Transfer between your bank, card, OtibacoExchange Balance or deposit from another wallet. Always in control of your money.",
+        "Move funds your way. Transfer between your bank, card, OtiPay Balance or deposit from another wallet. Always in control of your money.",
       buttonText: "Deposit and Withdraw",
       buttonVariant: "default" as const,
     },
@@ -25,7 +25,7 @@ export function MobileAppFeatures() {
       image: "/mobile-app-user3.png",
       title: "Sell Crypto Instantly",
       description:
-        "Sell crypto instantly at the best available rate directly to your bank, card or OtibacoExchange Balance.",
+        "Sell crypto instantly at the best available rate directly to your bank, card or OtiPay Balance.",
       buttonText: "Sell Crypto",
       buttonVariant: "default" as const,
     },

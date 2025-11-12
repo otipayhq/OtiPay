@@ -44,7 +44,6 @@ export function MobileShowcase() {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-
           {/* Left: Content */}
           <div className="space-y-6 lg:space-y-8 text-center lg:text-left">
             <div className="space-y-3 lg:space-y-4">
@@ -52,12 +51,24 @@ export function MobileShowcase() {
                 Trade on the Go
               </h2>
               <h3 className="text-xl md:text-2xl lg:text-3xl font-bold text-primary">
-                OtibacoExchange Mobile App
+                OtiPay Mobile App
               </h3>
-              <p className="text-base md:text-xl text-muted-foreground leading-normal">
-                Experience the full power of OtibacoExchange in your pocket. Our mobile app delivers professional
-                trading tools, real-time market data, and secure wallet management wherever you are.
+              <p
+                className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed mx-auto max-w-md
+                sm:max-w-lg lg:mx-0 lg:max-w-none text-center lg:text-left">
+                Experience the full power of <span className="font-semibold text-foreground">OtiPay</span> in your pocket.
+                Our mobile app delivers professional trading tools, real-time market data, and secure wallet management
+                wherever you are.
               </p>
+
+              {/* <p
+                className="text-base md:text-lg lg:text-xl text-muted-foreground leading-relaxed mx-auto max-w-md
+  sm:max-w-lg lg:mx-0 lg:max-w-none text-center lg:text-left"
+              >
+                Manage, trade, and grow with <span className="font-semibold text-foreground">OtiPay</span> — all in one secure mobile app.
+              </p> */}
+
+
             </div>
 
             {/* Feature Cards */}
@@ -66,11 +77,18 @@ export function MobileShowcase() {
               <div className="p-5 sm:p-6 rounded-xl border border-border bg-card text-card-foreground flex flex-col items-start">
                 <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-primary text-primary-foreground mb-3 sm:mb-4">
                   {/* Star Icon */}
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6"
+                  >
                     <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                   </svg>
                 </div>
-                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">⭐ Intuitive Design</h4>
+                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">
+                  ⭐ Intuitive Design
+                </h4>
                 <p className="text-sm sm:text-base text-muted-foreground/70">
                   Clean, modern interface designed for users
                 </p>
@@ -80,33 +98,39 @@ export function MobileShowcase() {
               <div className="p-5 sm:p-6 rounded-xl border border-border bg-card text-card-foreground flex flex-col items-start">
                 <div className="flex items-center justify-center h-12 w-12 rounded-xl bg-green-600 text-white mb-3 sm:mb-4">
                   {/* Star Icon */}
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-6 h-6">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 24 24"
+                    fill="currentColor"
+                    className="w-6 h-6"
+                  >
                     <path d="M12 17.27L18.18 21 16.54 13.97 22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                   </svg>
                 </div>
-                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">⭐ 5-Star Rated</h4>
+                <h4 className="text-lg sm:text-xl font-bold mb-1 sm:mb-2">
+                  ⭐ 5-Star Rated
+                </h4>
                 <p className="text-sm sm:text-base text-muted-foreground/70">
                   Trusted by millions of users worldwide
                 </p>
               </div>
             </div>
 
-
             {/* Download Buttons */}
-            <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center lg:justify-start">
-              <Link href="/download/android" className="block flex-shrink-0">
+            <div className="grid grid-cols-2 sm:flex sm:flex-row sm:justify-start gap-4 pt-6">
+              <Link href="/download/ios" className="flex justify-center sm:justify-start">
                 <Image
-                  src="/google-play-badge-logo-svgrepo-com.png"
-                  alt="Download on Google Play"
+                  src="/download-on-the-app-store-apple-logo-svgrepo-com.png"
+                  alt="Download on App Store"
                   width={180}
                   height={55}
                   className="rounded-md hover:opacity-90 transition duration-200"
                 />
               </Link>
-              <Link href="/download/ios" className="block flex-shrink-0">
+              <Link href="/download/android" className="flex justify-center sm:justify-start">
                 <Image
-                  src="/download-on-the-app-store-apple-logo-svgrepo-com.png"
-                  alt="Download on App Store"
+                  src="/google-play-badge-logo-svgrepo-com.png"
+                  alt="Download on Google Play"
                   width={180}
                   height={55}
                   className="rounded-md hover:opacity-90 transition duration-200"
@@ -117,7 +141,7 @@ export function MobileShowcase() {
 
           {/* Right: Phone Mockups */}
           <div className="relative flex justify-center items-center h-full pt-10 lg:pt-0">
-            <div className="relative w-64 h-[480px] lg:w-80 lg:h-[600px]">
+            <div className="relative w-56 h-[440px] sm:w-64 sm:h-[480px] lg:w-72 lg:h-[560px]">
               {phoneScreens.map((screen, index) => (
                 <div
                   key={index}
@@ -127,10 +151,17 @@ export function MobileShowcase() {
                       ? "opacity-60 scale-95 rotate-3 translate-x-4 lg:translate-x-8"
                       : "opacity-30 scale-90 -rotate-3 -translate-x-4 lg:-translate-x-8"
                     }`}
-                  style={{ zIndex: phoneScreens.length - Math.abs(index - currentPhone) }}
+                  style={{
+                    zIndex: phoneScreens.length - Math.abs(index - currentPhone),
+                  }}
                 >
                   <div className="w-full h-full rounded-2xl overflow-hidden bg-transparent">
-                    <Image src={screen.image || "/placeholder.svg"} alt={screen.title} fill className="object-cover" />
+                    <Image
+                      src={screen.image || "/placeholder.svg"}
+                      alt={screen.title}
+                      fill
+                      className="object-cover"
+                    />
                   </div>
                 </div>
               ))}

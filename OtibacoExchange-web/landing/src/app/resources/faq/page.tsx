@@ -64,7 +64,7 @@ const faqs = [
     category: "Compliance",
     items: [
       {
-        question: "Is OtiBacoExchange regulated?",
+        question: "Is OtiPay regulated?",
         answer: "Yes, we comply with all applicable Nigerian regulations and international AML/KYC standards.",
       },
       {
@@ -94,7 +94,7 @@ export default function FAQPage() {
       <section className="border-b border-border/40 py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h1>
-          <p className="text-lg text-muted-foreground">Find answers to common questions about OtiBacoExchange.</p>
+          <p className="text-lg text-muted-foreground">Find answers to common questions about OtiPay.</p>
         </div>
       </section>
 

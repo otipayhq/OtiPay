@@ -33,9 +33,9 @@ export function Header({ theme, onThemeToggle }: { theme: "light" | "dark"; onTh
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
               <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-gradient-to-br from-primary to-primary/70 text-primary-foreground font-bold text-sm">
-                OB
+                OP
               </div>
-              <span className="hidden sm:inline font-bold text-lg text-foreground">OtiBacoExchange</span>
+              <span className="hidden sm:inline font-bold text-lg text-foreground">OtiPay</span>
             </Link>
 
             {/* Desktop Navigation */}

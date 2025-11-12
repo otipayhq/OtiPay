@@ -17,7 +17,7 @@ export default function CookiesPage() {
 
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">2. How We Use Cookies</h2>
-              <p>OtiBacoExchange uses cookies for various purposes:</p>
+              <p>OtiPay uses cookies for various purposes:</p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
                 <li>
                   <strong>Authentication:</strong> To keep you logged in
@@ -47,7 +47,7 @@ export default function CookiesPage() {
                   <strong>Persistent Cookies:</strong> Cookies that remain on your device for a specified period
                 </li>
                 <li>
-                  <strong>First-party Cookies:</strong> Cookies set by OtiBacoExchange
+                  <strong>First-party Cookies:</strong> Cookies set by OtiPay
                 </li>
                 <li>
                   <strong>Third-party Cookies:</strong> Cookies set by our partners for analytics and advertising

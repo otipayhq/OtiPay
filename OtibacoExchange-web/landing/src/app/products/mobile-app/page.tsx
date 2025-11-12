@@ -144,7 +144,7 @@ export default function MobileAppPage() {
             transition={{ delay: 0.1 }}
             className="text-lg text-muted-foreground mb-8"
           >
-            Download OtibacoExchange today and start managing your crypto with confidence.
+            Download OtiPay today and start managing your crypto with confidence.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

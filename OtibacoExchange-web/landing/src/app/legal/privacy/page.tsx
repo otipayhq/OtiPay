@@ -9,7 +9,7 @@ export default function PrivacyPage() {
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">1. Introduction</h2>
               <p>
-                OtiBacoExchange ("Company," "we," "us," or "our") operates the website. This page informs you of our
+                OtiPay ("Company," "we," "us," or "our") operates the website. This page informs you of our
                 policies regarding the collection, use, and disclosure of personal data when you use our service and the
                 choices you have associated with that data.
               </p>
@@ -37,7 +37,7 @@ export default function PrivacyPage() {
 
             <section>
               <h2 className="text-2xl font-bold text-foreground mb-4">3. Use of Data</h2>
-              <p>OtiBacoExchange uses the collected data for various purposes:</p>
+              <p>OtiPay uses the collected data for various purposes:</p>
               <ul className="list-disc list-inside space-y-2 ml-4 mt-3">
                 <li>To provide and maintain our service</li>
                 <li>To notify you about changes to our service</li>

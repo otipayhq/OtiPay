@@ -7,7 +7,7 @@ import Image from "next/image"
 const blogPosts = [
   {
     id: 1,
-    title: "How to Convert Bitcoin to Naira on OtiBacoExchange",
+    title: "How to Convert Bitcoin to Naira on OtiPay",
     excerpt: "Step-by-step guide to convert your Bitcoin holdings to Nigerian Naira in minutes.",
     date: "2025-01-15",
     category: "Guide",

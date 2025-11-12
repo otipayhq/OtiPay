@@ -39,7 +39,7 @@ export default function FeaturesGrid() {
             transition={{ duration: 0.5 }}
             className="text-3xl sm:text-4xl font-bold text-foreground"
           >
-            Why Choose OtiBacoExchange
+            Why Choose OtiPay
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

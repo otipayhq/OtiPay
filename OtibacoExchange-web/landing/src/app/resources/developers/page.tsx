@@ -4,7 +4,7 @@ import { Code, GitBranch, Zap } from "lucide-react"
 const devResources = [
   {
     title: "REST API",
-    description: "Complete REST API reference for integrating OtiBacoExchange into your application.",
+    description: "Complete REST API reference for integrating OtiPay into your application.",
     icon: <Code className="w-6 h-6" />,
     link: "#",
   },
@@ -30,7 +30,7 @@ export default function DevelopersPage() {
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Developer Center</h1>
           <p className="text-lg text-muted-foreground">
-            Build with OtiBacoExchange. Access APIs, SDKs, and comprehensive documentation.
+            Build with OtiPay. Access APIs, SDKs, and comprehensive documentation.
           </p>
         </div>
       </section>
@@ -62,7 +62,7 @@ export default function DevelopersPage() {
           <div className="p-6 rounded-lg bg-card border border-border/40 overflow-x-auto">
             <pre className="text-sm text-muted-foreground font-mono">
               {`// Initialize the SDK
-import OtiBaco from '@otibaco/sdk';
+import OtiPayfrom '@otibaco/sdk';
 
 const client = new OtiBaco({
   apiKey: process.env.OTIBACO_API_KEY,

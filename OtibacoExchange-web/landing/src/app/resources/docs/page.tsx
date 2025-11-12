@@ -45,7 +45,7 @@ export default function DocsPage() {
       <section className="border-b border-border/40 py-16">
         <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-4">Documentation</h1>
-          <p className="text-lg text-muted-foreground">Comprehensive guides and tutorials for using OtiBacoExchange.</p>
+          <p className="text-lg text-muted-foreground">Comprehensive guides and tutorials for using OtiPay.</p>
         </div>
       </section>
 

@@ -19,9 +19,9 @@ export default function SupportPage() {
     "How to stay safe when using cryptocurrency",
     "Security and safety FAQs",
     "When will I receive my cryptocurrency?",
-    "How to verify your OtibacoExchange account",
-    "What is OtibacoExchange?",
-    "How do I manage my OtibacoExchange account?",
+    "How to verify your OtiPay account",
+    "What is OtiPay?",
+    "How do I manage my OtiPay account?",
   ]
 
   return (
@@ -127,7 +127,7 @@ export default function SupportPage() {
           >
             <div className="space-y-4">
               <h2 className="text-3xl md:text-4xl font-bold text-balance">Can't find what you're looking for?</h2>
-              <p className="text-lg text-muted-foreground">Nova, your OtibacoExchange AI assistant, is here to help!</p>
+              <p className="text-lg text-muted-foreground">Nova, your OtiPay AI assistant, is here to help!</p>
             </div>
             <Button size="lg" className="gap-2">
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
