@@ -1,4 +1,5 @@
-import AboutClient from "./_components/AboutClient"
+import AboutClient from "./AboutClient"
+
 
 export const metadata = {
   title: "About Us | OtiPay",
