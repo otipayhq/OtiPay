@@ -9,10 +9,10 @@ import CTASection from "@/components/cta-section"
 import ExchangeConverter from "@/components/exchange-converter"
 import HowItWorks from "@/components/how-it-works"
 
-// export const metadata = {
-//   title: "Exchange | Our Platform",
-//   description: "Seamless currency conversion with no hidden fees and instant transfers.",
-// }
+export const metadata = {
+  title: "Exchange | Our Platform",
+  description: "Seamless currency conversion with no hidden fees and instant transfers.",
+}
 
 export default function ExchangePage() {
   const features = [
