@@ -10,7 +10,7 @@ export default function FeaturesGrid() {
       icon: CreditCard,
       title: "Multi-Currency Wallet",
       description:
-        "Hold and manage Bitcoin, Ethereum, and other cryptocurrencies securely in Naira-denominated accounts.",
+        "Manage Bitcoin, Ethereum, and other cryptocurrencies securely in Naira-denominated accounts.",
     },
     {
       icon: Zap,

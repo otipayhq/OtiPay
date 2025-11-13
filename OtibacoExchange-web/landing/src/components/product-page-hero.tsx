@@ -1,5 +1,6 @@
 import { ArrowRight } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 interface ProductPageHeroProps {
   name: string
@@ -39,11 +40,15 @@ export default function ProductPageHero({
               {primaryCTA}
               <ArrowRight className="w-4 h-4" />
             </Button>
+
             {secondaryCTA && (
-              <Button size="lg" variant="outline">
-                {secondaryCTA}
-              </Button>
+              <Link href="/legal/terms">
+                <Button size="lg" variant="outline">
+                  {secondaryCTA}
+                </Button>
+              </Link>
             )}
+
           </div>
         </div>
       </div>

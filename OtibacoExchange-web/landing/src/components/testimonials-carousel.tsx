@@ -13,7 +13,7 @@ export default function TestimonialsCarousel() {
       name: "Chioma Okafor",
       role: "Freelancer",
       quote:
-        "OtiPayis quick, simple, and easy to use. The whole process took less than 10 minutes from start to finish.",
+        "OtiPay is quick, simple, and easy to use. The whole process took less than 10 minutes from start to finish.",
       rating: 5,
       verified: true,
     },
@@ -21,7 +21,7 @@ export default function TestimonialsCarousel() {
       name: "Tunde Ibrahim",
       role: "Business Owner",
       quote:
-        "I've used OtiPayseveral times, and it's nice and easy to use. Just a couple of clicks and the transaction completes straight from my phone, with email notifications and a status screen showing progress from start to finish.",
+        "I've used OtiPay several times, and it's nice and easy to use. Just a couple of clicks and the transaction completes straight from my phone, with email notifications and a status screen showing progress from start to finish.",
       rating: 5,
       verified: true,
     },
@@ -29,7 +29,7 @@ export default function TestimonialsCarousel() {
       name: "Amara Ejiro",
       role: "Crypto Investor",
       quote:
-        "I've used OtiPayseveral times to buy crypto. It's fast, efficient, easy to use, and the fees are reasonable. I've had no issues connecting with my bank account.",
+        "I've used OtiPay several times to buy crypto. It's fast, efficient, easy to use, and the fees are reasonable. I've had no issues connecting with my bank account.",
       rating: 5,
       verified: true,
     },
@@ -37,7 +37,7 @@ export default function TestimonialsCarousel() {
       name: "Ibrahim Hassan",
       role: "Remote Worker",
       quote:
-        "OtiPayis a reliable, cost-effective way to turn fiat to crypto. It's the only service that worked with my bank debit card, with reasonable fees and a straightforward process.",
+        "OtiPay is a reliable, cost-effective way to turn fiat to crypto. It's the only service that worked with my bank debit card, with reasonable fees and a straightforward process.",
       rating: 5,
       verified: true,
     },
@@ -53,7 +53,7 @@ export default function TestimonialsCarousel() {
       name: "Hassan Malik",
       role: "Entrepreneur",
       quote:
-        "OtiPaymakes buying crypto in Nigeria easy. I bought XRP and it was in my wallet within 2 minutes, with an excellent exchange rate.",
+        "OtiPay makes buying crypto in Nigeria easy. I bought XRP and it was in my wallet within 2 minutes, with an excellent exchange rate.",
       rating: 5,
       verified: true,
     },

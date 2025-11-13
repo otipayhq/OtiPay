@@ -99,10 +99,10 @@ export default function ExchangePage() {
             className="relative z-10 text-center text-white px-6 py-32 md:py-48"
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6">
-              Fast. Transparent. Seamless. The smarter way to exchange currency.
+              Fast, clear, and reliable exchange.
             </h2>
             <p className="text-lg md:text-xl text-white/80 max-w-3xl mx-auto">
-              Convert crypto to Naira instantly with zero hidden fees. Your money, your control, anywhere, anytime.
+              Instant conversions with full control and zero surprises.
             </p>
           </motion.div>
         </div>

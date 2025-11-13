@@ -31,7 +31,7 @@ export default function VisualFeaturesHero() {
             transition={{ duration: 0.5 }}
             className="text-3xl sm:text-4xl lg:text-5xl font-bold text-foreground text-balance leading-tight"
           >
-            Powered by Next-Gen Technology
+            Powered by Otibaco Technology
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 20 }}

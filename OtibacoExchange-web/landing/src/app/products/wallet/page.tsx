@@ -5,82 +5,93 @@ import CTASection from "@/components/cta-section"
 import ModernVideoEmbed from "@/components/modern-video-embed"
 
 export const metadata = {
-  title: "Digital Wallet | Our Platform",
-  description: "Manage your money across 40+ currencies with zero fees and real-time rates.",
+  title: "Digital Wallet | Fast NGN & USD Balance",
+  description:
+    "Your secure NGN & USD in-app wallet for instant deposits, withdrawals, analysis, and seamless crypto-to-fiat transactions.",
 }
 
 export default function WalletPage() {
   const features = [
     {
-      title: "40+ Currencies",
-      description: "Access a wide range of currencies for global transactions",
-      icon: "🌍",
+      title: "NGN & USD Balance",
+      description: "Hold and manage your money in stable USD and local NGN.",
+      icon: "💼",
     },
     {
-      title: "Real-Time Rates",
-      description: "Always get the best exchange rates with live market data",
-      icon: "📊",
-    },
-    {
-      title: "Zero Fees",
-      description: "No hidden charges or conversion fees on transfers",
-      icon: "💰",
-    },
-    {
-      title: "Instant Transfers",
-      description: "Send money instantly to any wallet in seconds",
+      title: "Instant Deposits",
+      description: "Fund your wallet with bank transfer or supported payment channels.",
       icon: "⚡",
     },
     {
-      title: "Secure Storage",
-      description: "Bank-level encryption protects your funds 24/7",
-      icon: "🔒",
+      title: "Fast Withdrawals",
+      description: "Withdraw instantly to any Nigerian bank 24/7.",
+      icon: "🏦",
     },
     {
-      title: "Mobile Access",
-      description: "Manage your wallet anytime, anywhere from your phone",
-      icon: "📱",
+      title: "Buy & Sell Crypto",
+      description: "Buy USDT with NGN and sell back anytime. Real-time FX rates.",
+      icon: "💱",
+    },
+    {
+      title: "Smart Security",
+      description: "2FA, biometric lock, device monitoring & fraud protection.",
+      icon: "🔐",
+    },
+    {
+      title: "Analytics & Insights",
+      description: "Track spending, income, and crypto activity with beautiful insights.",
+      icon: "📊",
     },
   ]
 
   const benefits = [
-    { text: "Spend less on international transactions with competitive rates" },
-    { text: "Monitor all your money in one place across multiple currencies" },
-    { text: "Send remittances to family and friends worldwide instantly" },
-    { text: "Get access to exclusive rewards and cashback programs" },
-    { text: "Set up automatic transfers for recurring payments" },
-    { text: "Receive alerts for every transaction to stay secure" },
+    { text: "Switch between NGN and USD for stable and flexible spending." },
+    { text: "Instant liquidity — deposit, exchange, or withdraw in seconds." },
+    { text: "Your wallet powers all OtiPay features: exchange, payments, transfers." },
+    { text: "Predictable exchange rates that update in real-time." },
+    { text: "Safe storage with encrypted transactions and fraud monitoring." },
+    { text: "Perfect for freelancers, traders, and everyday users." },
   ]
 
   return (
     <main className="min-h-screen bg-background">
+      {/* HERO SECTION UPDATED FOR YOUR APP */}
       <ProductPageHero
         name="Digital Wallet"
-        tagline="Manage Your Global Money"
-        description="Store, send, and receive money across 40+ currencies with zero fees and real-time exchange rates. Perfect for travelers, remote workers, and international businesses."
+        tagline="Your NGN & USD Smart Wallet"
+        description="Store, send, receive, and exchange money with a secure wallet designed for African users. Manage NGN & USD balances, fund and withdraw instantly, and enjoy the fastest crypto-to-fiat experience."
         primaryCTA="Create Your Wallet"
         secondaryCTA="Watch Demo"
       />
 
+      {/* UPDATED MIDDLE SECTION — FINTECH FOCUSED */}
       <section className="py-20 md:py-32 bg-muted/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16">
           <div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Easy Money Management</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">
+              Your Money, One Smart Wallet
+            </h2>
+
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
               <ModernVideoEmbed
                 videoId="9bZkp7q19f0"
-                title="Multi-Currency Wallet Demo"
-                description="Manage multiple currencies in one secure wallet"
-                thumbnail="/wallet-management-interface.jpg"
+                title="Wallet Overview"
+                description="How Digital Wallet helps you manage NGN & USD effortlessly."
+                thumbnail="/otibaco-fintech-wallet-ui.jpg"
               />
+
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold">Complete Control, Zero Hassle</h3>
+                <h3 className="text-2xl font-bold">
+                  Everything You Need in One Place
+                </h3>
+
                 <ul className="space-y-3">
                   {[
-                    "View real-time balance in your preferred currency",
-                    "Send money instantly across the globe",
-                    "Convert between 40+ currencies on demand",
-                    "Track spending with detailed analytics",
+                    "Fund with bank transfer and see it reflected instantly",
+                    "Hold NGN & USD balances for stability and flexibility",
+                    "Buy USDT instantly from your wallet",
+                    "Track transactions with clean, modern analytics",
+                    "Send money to other users fast and free",
                   ].map((item) => (
                     <li key={item} className="flex items-start gap-3">
                       <span className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center flex-shrink-0 mt-1">
@@ -96,6 +107,7 @@ export default function WalletPage() {
         </div>
       </section>
 
+      {/* Updated to match fintech features */}
       <ProductFeatures features={features} />
       <ProductBenefits benefits={benefits} />
       <CTASection />
