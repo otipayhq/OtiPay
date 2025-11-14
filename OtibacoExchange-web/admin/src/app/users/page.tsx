@@ -9,8 +9,17 @@ import { KYCQueue } from '@/components/users/kyc-queue'
 import { MetricCard } from '@/components/metric-card'
 import { Users, CheckCircle2, AlertTriangle, Clock } from 'lucide-react'
 
+type User = {
+  id: string
+  name: string
+  email?: string
+  kycStatus?: 'verified' | 'pending' | 'flagged' | 'rejected' | 'review'
+  createdAt?: string
+  flagged?: boolean
+}
+
 export default function UsersPage() {
-  const [selectedUser, setSelectedUser] = useState(null)
+  const [selectedUser, setSelectedUser] = useState<User | null>(null)
 
   return (
     <div className="min-h-screen bg-background">
