@@ -12,12 +12,12 @@ import { DollarSign, TrendingUp, Users, Zap, Wallet, AlertTriangle } from 'lucid
 
 export default function DashboardPage() {
   const [metrics] = useState([
-    { title: 'Total Transactions Today', value: '₦2.4M', icon: DollarSign, trend: { value: 12, isPositive: true }, color: 'primary', glow: true },
-    { title: 'Total Volume (24h)', value: '₦8.9M', icon: TrendingUp, trend: { value: 8, isPositive: true }, color: 'secondary', glow: true },
-    { title: 'Pending KYC', value: '142', icon: Users, trend: { value: 5, isPositive: false }, color: 'amber', glow: true },
-    { title: 'Active Users', value: '8,234', icon: Users, trend: { value: 15, isPositive: true }, color: 'success', glow: true },
-    { title: 'Liquidity Pool', value: '₦45.2M', icon: Wallet, trend: { value: 3, isPositive: true }, color: 'cyan', glow: true },
-    { title: 'Risk Alerts', value: '8', icon: AlertTriangle, trend: { value: 2, isPositive: false }, color: 'danger', glow: true },
+    { title: 'Total Transactions Today', value: '₦2.4M', icon: DollarSign, trend: { value: 12, isPositive: true }, color: 'primary' as const, glow: true },
+    { title: 'Total Volume (24h)', value: '₦8.9M', icon: TrendingUp, trend: { value: 8, isPositive: true }, color: 'cyan' as const, glow: true },
+    { title: 'Pending KYC', value: '142', icon: Users, trend: { value: 5, isPositive: false }, color: 'warning' as const, glow: true },
+    { title: 'Active Users', value: '8,234', icon: Users, trend: { value: 15, isPositive: true }, color: 'success' as const, glow: true },
+    { title: 'Liquidity Pool', value: '₦45.2M', icon: Wallet, trend: { value: 3, isPositive: true }, color: 'cyan' as const, glow: true },
+    { title: 'Risk Alerts', value: '8', icon: AlertTriangle, trend: { value: 2, isPositive: false }, color: 'danger' as const, glow: true },
   ])
 
   return (
