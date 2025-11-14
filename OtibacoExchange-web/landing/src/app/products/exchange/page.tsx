@@ -12,7 +12,7 @@ import HowItWorks from "@/components/how-it-works"
 // export const metadata = {
 //   title: "Exchange | Our Platform",
 //   description: "Seamless currency conversion with no hidden fees and instant transfers.",
-// }
+// } // i fixed error here
 
 export default function ExchangePage() {
   const features = [
