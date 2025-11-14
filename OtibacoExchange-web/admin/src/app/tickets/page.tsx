@@ -6,8 +6,16 @@ import { TopNav } from '@/components/top-nav'
 import { TicketList } from '@/components/support/ticket-list'
 import { TicketDetail } from '@/components/support/ticket-detail'
 
+type SupportTicket = {
+  id: string
+  subject: string
+  message?: string
+  status?: 'open' | 'closed' | 'pending' | 'in-progress' | 'resolved'
+  createdAt?: string
+}
+
 export default function TicketsPage() {
-  const [selectedTicket, setSelectedTicket] = useState(null)
+  const [selectedTicket, setSelectedTicket] = useState<SupportTicket | null>(null)
 
   return (
     <div className="min-h-screen bg-background">
