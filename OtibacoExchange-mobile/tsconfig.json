@@ -1,5 +1,4 @@
 {
-  // Removed "extends": "expo/tsconfig.base" because it couldn't be resolved; install expo or update the path to a valid base tsconfig.
   "compilerOptions": {
     "strict": true,
     "paths": {
@@ -14,5 +13,6 @@
     ".expo/types/**/*.ts",
     "expo-env.d.ts",
     "nativewind-env.d.ts"
-  ]
+  ],
+  "extends": "expo/tsconfig.base"
 }
