@@ -1,4 +1,5 @@
-import OnboardingFlow from './(onboarding)';
+import OnboardingFlow from "./(onboarding)";
+
 
 export default function index() {
   return <OnboardingFlow />;
